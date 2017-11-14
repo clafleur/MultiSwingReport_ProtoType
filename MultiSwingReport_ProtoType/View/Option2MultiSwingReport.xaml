@@ -7,8 +7,6 @@
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:scroll="clr-namespace:SoftwareArchitects.Windows.Controls;assembly=SoftwareArchitects.Windows.Controls.ScrollSynchronizer"
-    d:DesignHeight="300"
-    d:DesignWidth="300"
     mc:Ignorable="d">
 
     <UserControl.Resources>
@@ -112,7 +110,7 @@
                         <materialDesign:TransitioningContent
                             Grid.Row="2"
                             Margin="0,4"
-                            OpeningEffectsOffset="{materialDesign:IndexedItemOffsetMultiplier 0:0:0.05}">
+                            OpeningEffectsOffset="{materialDesign:IndexedItemOffsetMultiplier 0:0:0.5}">
                             <materialDesign:TransitioningContent.OpeningEffects>
                                 <materialDesign:TransitionEffect Kind="FadeIn" />
                                 <materialDesign:TransitionEffect Kind="SlideInFromLeft" />
@@ -256,8 +254,8 @@
 
                 <materialDesign:TransitioningContent Grid.Column="1" Margin="10">
                     <materialDesign:TransitioningContent.OpeningEffects>
-                        <materialDesign:TransitionEffect Kind="FadeIn" Duration="0:0:0.5" />
-                        <materialDesign:TransitionEffect Kind="SlideInFromBottom" Duration="0:0:0.5" />
+                        <materialDesign:TransitionEffect Kind="FadeIn" Duration="0:0:0.75" />
+                        <materialDesign:TransitionEffect Kind="SlideInFromBottom" Duration="0:0:0.75" />
                     </materialDesign:TransitioningContent.OpeningEffects>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -439,8 +437,8 @@
 
                 <materialDesign:TransitioningContent Grid.Column="2" Margin="10">
                     <materialDesign:TransitioningContent.OpeningEffects>
-                        <materialDesign:TransitionEffect Kind="FadeIn" Duration="0:0:0.5" />
-                        <materialDesign:TransitionEffect Kind="SlideInFromBottom" Duration="0:0:0.5" />
+                        <materialDesign:TransitionEffect Kind="FadeIn" Duration="0:0:1" />
+                        <materialDesign:TransitionEffect Kind="SlideInFromBottom" Duration="0:0:1" />
                     </materialDesign:TransitioningContent.OpeningEffects>
                     <Grid>
                         <Grid.RowDefinitions>
