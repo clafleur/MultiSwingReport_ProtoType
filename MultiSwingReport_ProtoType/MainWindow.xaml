@@ -144,7 +144,7 @@
             VerticalAlignment="Center"
             Orientation="Horizontal">
             <TextBlock Margin="20,0" Text="Light" />
-            <ToggleButton />
+            <ToggleButton Checked="ChangeTheme_ToggleChecked" Unchecked="ChangeTheme_ToggleButtonUnchecked"/>
             <TextBlock Margin="20,0" Text="Dark" />
         </StackPanel>
     </Grid>

@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MaterialDesignThemes.Wpf;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace MultiSwingReport_ProtoType
 {
@@ -23,6 +12,28 @@ namespace MultiSwingReport_ProtoType
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void ChangeTheme_ToggleChecked(object sender, RoutedEventArgs e)
+        {
+            ChangeTheme(true);
+        }
+
+        private void ChangeTheme(bool isDark)
+        {
+            if (isDark)
+            {
+                new PaletteHelper().SetLightDark(true);
+            }
+            else
+            {
+                new PaletteHelper().SetLightDark(false);
+            }
+         }
+
+        private void ChangeTheme_ToggleButtonUnchecked(object sender, RoutedEventArgs e)
+        {
+            ChangeTheme(false);
         }
     }
 }
