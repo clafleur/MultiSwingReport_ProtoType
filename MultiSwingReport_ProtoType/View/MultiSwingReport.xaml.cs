@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MaterialDesignThemes.Wpf;
+using System.Collections.ObjectModel;
 
 namespace MultiSwingReport_ProtoType.View
 {
@@ -175,5 +176,21 @@ namespace MultiSwingReport_ProtoType.View
         public double Turn { get; set; }
         public double Bend { get; set; }
         public double SideBend { get; set; }
+    }
+
+    public class Player {
+        public string Name { get; set; }
+        public ObservableCollection<SwingResults> SwingResults { get; set; }
+    }
+
+    public class SwingResults
+    {
+        public string SwingPosition { get; set; }
+        public string Position { get; set; }
+        public DateTime Date { get; set; }
+        public double Turn { get; set; }
+        public double Bend { get; set; }
+        public double SideBend { get; set; }
+        public bool IsUsedForCalc { get; set; }
     }
 }

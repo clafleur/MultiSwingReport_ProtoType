@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,12 +23,11 @@ namespace MultiSwingReport_ProtoType.View
     {
         List<AddressSwingResults> addressPositionPelvis = new List<AddressSwingResults>();
         List<AddressSwingResults> addressPositionTorso = new List<AddressSwingResults>();
-        List<AddressSwingResults> addressSR = new List<AddressSwingResults>();
+        ObservableCollection<AddressSwingResults> addressSR = new ObservableCollection<AddressSwingResults>();
 
         public Option2MultiSwingReport()
         {
             InitializeComponent();
-
             #region AddressSwingResults
 
             addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 16, 37, 51), Turn = 9.00, Bend = 21.00, SideBend = -2.00 });
@@ -107,6 +107,9 @@ namespace MultiSwingReport_ProtoType.View
             var impactTorsoLastFive = addressPositionTorso.Take(5);
             ImpactTorsoItemsControl.ItemsSource = impactTorsoLastFive;
 
+            var sessionDateLastFive = addressSR.Take(5);
+            SessionDateItemsControl.ItemsSource = sessionDateLastFive;
+
         }
 
         private void LastTen_Checked(object sender, RoutedEventArgs e)
@@ -125,6 +128,9 @@ namespace MultiSwingReport_ProtoType.View
             ImpactPelvisItemsControl.ItemsSource = impactPelvisLastTen;
             var impactTorsoLastTen = addressPositionTorso.Take(10);
             ImpactTorsoItemsControl.ItemsSource = impactTorsoLastTen;
+
+            var sessionDateLastTen = addressSR.Take(10);
+            SessionDateItemsControl.ItemsSource = sessionDateLastTen;
         }
 
         private void LastFifteen_Checked(object sender, RoutedEventArgs e)
@@ -143,6 +149,9 @@ namespace MultiSwingReport_ProtoType.View
             ImpactPelvisItemsControl.ItemsSource = impactPelvisLastFifteen;
             var impactTorsoLastFifteen = addressPositionTorso.Take(15);
             ImpactTorsoItemsControl.ItemsSource = impactTorsoLastFifteen;
+
+            var sessionDateLastFifteen = addressSR.Take(15);
+            SessionDateItemsControl.ItemsSource = sessionDateLastFifteen;
         }
 
         private void All_Checked(object sender, RoutedEventArgs e)
@@ -155,6 +164,8 @@ namespace MultiSwingReport_ProtoType.View
 
             ImpactPelvisItemsControl.ItemsSource = addressPositionPelvis;
             ImpactTorsoItemsControl.ItemsSource = addressPositionTorso;
+
+            SessionDateItemsControl.ItemsSource = addressSR;
         }
     }
 }
