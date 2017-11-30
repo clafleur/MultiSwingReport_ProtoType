@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\VSProjects\MultiSwingReport_ProtoType\MultiSwingReport_ProtoType\obj\Debug\
+D:\GitRepos\MultiSwingReport_ProtoType\MultiSwingReport_ProtoType\obj\Debug\
 MultiSwingReport_ProtoType
 none
 false
 DEBUG;TRACE
-D:\VSProjects\MultiSwingReport_ProtoType\MultiSwingReport_ProtoType\App.xaml
-3-718936200
+D:\GitRepos\MultiSwingReport_ProtoType\MultiSwingReport_ProtoType\App.xaml
+4-1261327378
 
-11-172957258
-16-1150065139
-MainWindow.xaml;View\MultiSwingReport.xaml;View\Option2MultiSwingReport.xaml;
+121532175575
+16-1753787908
+MainWindow.xaml;View\MultiSwingReport.xaml;View\Option2MultiSwingReport.xaml;View\Option3MultiSwingReport.xaml;
 
-False
+True
 

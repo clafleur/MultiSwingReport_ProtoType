@@ -42,23 +42,10 @@
                         Foreground="White"
                         Text="K" />
                 </Border>
-                <StackPanel VerticalAlignment="Center">
-                    <TextBlock
-                        VerticalAlignment="Center"
-                        Style="{DynamicResource MaterialDesignTitleTextBlock}"
-                        Text="Adam Kmak" />
-                    <StackPanel
-                        Grid.Column="1"
-                        Margin="0,2,0,0"
-                        HorizontalAlignment="Left"
-                        Orientation="Horizontal">
-                        <TextBlock Style="{DynamicResource MaterialDesignBody2TextBlock}" Text="Session Date:" />
-                        <TextBlock
-                            Margin="6,0,0,0"
-                            Style="{DynamicResource MaterialDesignBody1TextBlock}"
-                            Text="2/27/2017" />
-                    </StackPanel>
-                </StackPanel>
+                <TextBlock
+                    VerticalAlignment="Center"
+                    Style="{DynamicResource MaterialDesignTitleTextBlock}"
+                    Text="Adam Kmak" />
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Visibility="{Binding IsChecked, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=Option2}">
@@ -76,6 +63,7 @@
                         Text="K" />
                 </Border>
                 <ComboBox
+                    x:Name="PlayerComboBox"
                     MinWidth="150"
                     VerticalAlignment="Center"
                     FontSize="20">
@@ -85,28 +73,6 @@
                     <ComboBoxItem Content="Teri Dunlop" />
                     <ComboBoxItem Content="Chris Turner" />
                 </ComboBox>
-
-                <StackPanel
-                    Grid.Column="1"
-                    Margin="30,0,0,0"
-                    HorizontalAlignment="Left"
-                    Orientation="Horizontal">
-                    <TextBlock
-                        VerticalAlignment="Center"
-                        Style="{DynamicResource MaterialDesignSubheadingTextBlock}"
-                        Text="Session Date:" />
-                    <ComboBox
-                        MinWidth="100"
-                        Margin="12,2,0,0"
-                        VerticalAlignment="Center"
-                        FontSize="15">
-                        <ComboBoxItem Content="2/27/2017" IsSelected="True" />
-                        <ComboBoxItem Content="2/24/2017" />
-                        <ComboBoxItem Content="2/23/2017" />
-                        <ComboBoxItem Content="2/19/2017" />
-                        <ComboBoxItem Content="2/18/2017" />
-                    </ComboBox>
-                </StackPanel>
             </StackPanel>
             <Rectangle
                 Grid.ColumnSpan="3"
@@ -122,6 +88,7 @@
         <Grid Grid.Row="1">
             <vm:MultiSwingReport Visibility="{Binding IsChecked, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=Option1}" />
             <vm:Option2MultiSwingReport Visibility="{Binding IsChecked, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=Option2}" />
+            <vm:Option3MultiSwingReport Visibility="{Binding IsChecked, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=Option3}" />
         </Grid>
 
         <StackPanel
@@ -136,6 +103,7 @@
                 Margin="20,0"
                 Content="Option 1" />
             <RadioButton x:Name="Option2" Content="Option 2" />
+            <RadioButton x:Name="Option3" Content="Option 3" Margin="20,0"/>
         </StackPanel>
         <StackPanel
             Grid.Row="2"
@@ -144,7 +112,7 @@
             VerticalAlignment="Center"
             Orientation="Horizontal">
             <TextBlock Margin="20,0" Text="Light" />
-            <ToggleButton />
+            <ToggleButton Checked="ChangeTheme_ToggleChecked" Unchecked="ChangeTheme_ToggleButtonUnchecked" />
             <TextBlock Margin="20,0" Text="Dark" />
         </StackPanel>
     </Grid>
