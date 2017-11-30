@@ -21,56 +21,56 @@ namespace MultiSwingReport_ProtoType.View
     /// </summary>
     public partial class Option2MultiSwingReport : UserControl
     {
-        List<AddressSwingResults> addressPositionPelvis = new List<AddressSwingResults>();
-        List<AddressSwingResults> addressPositionTorso = new List<AddressSwingResults>();
-        ObservableCollection<AddressSwingResults> addressSR = new ObservableCollection<AddressSwingResults>();
+        List<SwingResults> addressPositionPelvis = new List<SwingResults>();
+        List<SwingResults> addressPositionTorso = new List<SwingResults>();
+        ObservableCollection<SwingResults> addressSR = new ObservableCollection<SwingResults>();
 
         public Option2MultiSwingReport()
         {
             InitializeComponent();
             #region AddressSwingResults
 
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 16, 37, 51), Turn = 9.00, Bend = 21.00, SideBend = -2.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 16, 28, 29), Turn = 4.00, Bend = 21.00, SideBend = -1.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 16, 10, 42), Turn = 5.00, Bend = 20.00, SideBend = -3.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 16, 02, 19), Turn = 3.00, Bend = 19.00, SideBend = -2.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 15, 49, 30), Turn = 9.00, Bend = 20.00, SideBend = -3.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 15, 37, 20), Turn = 9.00, Bend = 21.00, SideBend = -2.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 15, 15, 29), Turn = 4.00, Bend = 21.00, SideBend = -1.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 15, 02, 42), Turn = 5.00, Bend = 20.00, SideBend = -3.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 14, 51, 19), Turn = 3.00, Bend = 19.00, SideBend = -2.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 14, 40, 02), Turn = 9.00, Bend = 20.00, SideBend = -3.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 14, 32, 51), Turn = 9.00, Bend = 21.00, SideBend = -2.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 14, 19, 45), Turn = 4.00, Bend = 21.00, SideBend = -1.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 14, 10, 30), Turn = 5.00, Bend = 20.00, SideBend = -3.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 14, 02, 00), Turn = 3.00, Bend = 19.00, SideBend = -2.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 13, 49, 30), Turn = 9.00, Bend = 20.00, SideBend = -3.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 13, 37, 20), Turn = 9.00, Bend = 21.00, SideBend = -2.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 13, 15, 29), Turn = 4.00, Bend = 21.00, SideBend = -1.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 13, 02, 42), Turn = 5.00, Bend = 20.00, SideBend = -3.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 12, 51, 19), Turn = 3.00, Bend = 19.00, SideBend = -2.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 12, 40, 02), Turn = 9.00, Bend = 20.00, SideBend = -3.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 16, 37, 51), Turn = 9.00, Bend = 21.00, SideBend = -2.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 16, 28, 29), Turn = 4.00, Bend = 21.00, SideBend = -1.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 16, 10, 42), Turn = 5.00, Bend = 20.00, SideBend = -3.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 16, 02, 19), Turn = 3.00, Bend = 19.00, SideBend = -2.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 15, 49, 30), Turn = 9.00, Bend = 20.00, SideBend = -3.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 15, 37, 20), Turn = 9.00, Bend = 21.00, SideBend = -2.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 15, 15, 29), Turn = 4.00, Bend = 21.00, SideBend = -1.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 15, 02, 42), Turn = 5.00, Bend = 20.00, SideBend = -3.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 14, 51, 19), Turn = 3.00, Bend = 19.00, SideBend = -2.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 14, 40, 02), Turn = 9.00, Bend = 20.00, SideBend = -3.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 14, 32, 51), Turn = 9.00, Bend = 21.00, SideBend = -2.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 14, 19, 45), Turn = 4.00, Bend = 21.00, SideBend = -1.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 14, 10, 30), Turn = 5.00, Bend = 20.00, SideBend = -3.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 14, 02, 00), Turn = 3.00, Bend = 19.00, SideBend = -2.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 13, 49, 30), Turn = 9.00, Bend = 20.00, SideBend = -3.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 13, 37, 20), Turn = 9.00, Bend = 21.00, SideBend = -2.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 13, 15, 29), Turn = 4.00, Bend = 21.00, SideBend = -1.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 13, 02, 42), Turn = 5.00, Bend = 20.00, SideBend = -3.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 12, 51, 19), Turn = 3.00, Bend = 19.00, SideBend = -2.00 });
+            addressSR.Add(new SwingResults() { Position = "Pelvis", Date = new DateTime(2017, 2, 27, 12, 40, 02), Turn = 9.00, Bend = 20.00, SideBend = -3.00 });
 
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 16, 37, 51), Turn = 10.00, Bend = 31.00, SideBend = 11.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 16, 28, 29), Turn = 8.00, Bend = 37.00, SideBend = 10.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 16, 10, 42), Turn = 8.00, Bend = 40.00, SideBend = 9.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 16, 02, 19), Turn = 10.00, Bend = 40.00, SideBend = 11.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 15, 49, 30), Turn = 2.00, Bend = 42.00, SideBend = 10.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 15, 37, 20), Turn = 7.60, Bend = 39.40, SideBend = 10.20 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 15, 15, 29), Turn = 8.00, Bend = 40.00, SideBend = 10.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 15, 02, 42), Turn = 10.00, Bend = 31.00, SideBend = 11.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 14, 51, 19), Turn = 8.00, Bend = 37.00, SideBend = 10.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 14, 40, 02), Turn = 8.00, Bend = 40.00, SideBend = 9.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 14, 32, 51), Turn = 10.00, Bend = 40.00, SideBend = 11.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 14, 19, 45), Turn = 2.00, Bend = 42.00, SideBend = 10.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 14, 10, 30), Turn = 7.60, Bend = 39.40, SideBend = 10.20 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 14, 02, 00), Turn = 8.00, Bend = 40.00, SideBend = 10.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 13, 49, 30), Turn = 10.00, Bend = 31.00, SideBend = 11.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 13, 37, 20), Turn = 8.00, Bend = 37.00, SideBend = 10.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 13, 15, 29), Turn = 8.00, Bend = 40.00, SideBend = 9.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 13, 02, 42), Turn = 10.00, Bend = 40.00, SideBend = 11.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 12, 51, 19), Turn = 2.00, Bend = 42.00, SideBend = 10.00 });
-            addressSR.Add(new AddressSwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 12, 40, 02), Turn = 7.60, Bend = 39.40, SideBend = 10.20 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 16, 37, 51), Turn = 10.00, Bend = 31.00, SideBend = 11.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 16, 28, 29), Turn = 8.00, Bend = 37.00, SideBend = 10.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 16, 10, 42), Turn = 8.00, Bend = 40.00, SideBend = 9.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 16, 02, 19), Turn = 10.00, Bend = 40.00, SideBend = 11.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 15, 49, 30), Turn = 2.00, Bend = 42.00, SideBend = 10.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 15, 37, 20), Turn = 7.60, Bend = 39.40, SideBend = 10.20 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 15, 15, 29), Turn = 8.00, Bend = 40.00, SideBend = 10.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 15, 02, 42), Turn = 10.00, Bend = 31.00, SideBend = 11.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 14, 51, 19), Turn = 8.00, Bend = 37.00, SideBend = 10.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 14, 40, 02), Turn = 8.00, Bend = 40.00, SideBend = 9.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 14, 32, 51), Turn = 10.00, Bend = 40.00, SideBend = 11.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 14, 19, 45), Turn = 2.00, Bend = 42.00, SideBend = 10.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 14, 10, 30), Turn = 7.60, Bend = 39.40, SideBend = 10.20 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 14, 02, 00), Turn = 8.00, Bend = 40.00, SideBend = 10.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 13, 49, 30), Turn = 10.00, Bend = 31.00, SideBend = 11.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 13, 37, 20), Turn = 8.00, Bend = 37.00, SideBend = 10.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 13, 15, 29), Turn = 8.00, Bend = 40.00, SideBend = 9.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 13, 02, 42), Turn = 10.00, Bend = 40.00, SideBend = 11.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 12, 51, 19), Turn = 2.00, Bend = 42.00, SideBend = 10.00 });
+            addressSR.Add(new SwingResults() { Position = "Torso", Date = new DateTime(2017, 2, 27, 12, 40, 02), Turn = 7.60, Bend = 39.40, SideBend = 10.20 });
 
             //Put each position into its own list
             foreach (var item in addressSR)

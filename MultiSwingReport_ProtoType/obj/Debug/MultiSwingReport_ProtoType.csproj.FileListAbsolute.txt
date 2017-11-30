@@ -92,3 +92,5 @@ D:\GitRepos\MultiSwingReport_ProtoType\MultiSwingReport_ProtoType\obj\Debug\View
 D:\GitRepos\MultiSwingReport_ProtoType\MultiSwingReport_ProtoType\obj\Debug\MultiSwingReport_ProtoType.g.resources
 D:\GitRepos\MultiSwingReport_ProtoType\MultiSwingReport_ProtoType\obj\Debug\MultiSwingReport_ProtoType.Properties.Resources.resources
 D:\GitRepos\MultiSwingReport_ProtoType\MultiSwingReport_ProtoType\obj\Debug\MultiSwingReport_ProtoType.csproj.GenerateResource.Cache
+D:\GitRepos\MultiSwingReport_ProtoType\MultiSwingReport_ProtoType\obj\Debug\View\Option3MultiSwingReport.g.cs
+D:\GitRepos\MultiSwingReport_ProtoType\MultiSwingReport_ProtoType\obj\Debug\View\Option3MultiSwingReport.baml

@@ -88,6 +88,7 @@
         <Grid Grid.Row="1">
             <vm:MultiSwingReport Visibility="{Binding IsChecked, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=Option1}" />
             <vm:Option2MultiSwingReport Visibility="{Binding IsChecked, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=Option2}" />
+            <vm:Option3MultiSwingReport Visibility="{Binding IsChecked, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=Option3}" />
         </Grid>
 
         <StackPanel
@@ -102,6 +103,7 @@
                 Margin="20,0"
                 Content="Option 1" />
             <RadioButton x:Name="Option2" Content="Option 2" />
+            <RadioButton x:Name="Option3" Content="Option 3" Margin="20,0"/>
         </StackPanel>
         <StackPanel
             Grid.Row="2"

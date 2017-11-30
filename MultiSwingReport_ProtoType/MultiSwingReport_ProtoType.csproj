@@ -72,6 +72,10 @@
     <Compile Include="View\Option2MultiSwingReport.xaml.cs">
       <DependentUpon>Option2MultiSwingReport.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Option3MultiSwingReport.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>Option3MultiSwingReport.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -89,6 +93,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Option2MultiSwingReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Option3MultiSwingReport.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
